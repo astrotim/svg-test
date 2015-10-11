@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG Test</title>
+
+	<style>
+		.icon {
+			color: tomato;
+			transition: all .5s;
+			width: 32px;
+			height: 32px;
+		}
+
+		.icon:hover {
+			color: darkmagenta;
+			transform: scale(1.5);
+		}
+	</style>
+</head>
+<body>
+	<h1>SVG Test</h1>
+
+	<p>House</p>
+	<svg class="icon">
+		<use xlink:href="icons/icon-sprite.svg#icon-house"></use>
+	</svg>
+
+	<p>People</p>
+	<svg class="icon">
+		<use xlink:href="icons/icon-sprite.svg#icon-people"></use>
+	</svg>
+
+	<p>Person</p>
+	<svg class="icon">
+		<use xlink:href="icons/icon-sprite.svg#icon-person"></use>
+	</svg>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+    "color": "tomato",
+    "default-sizes": {
+        "width": "24"
+    },
+    "icons": {
+        "house": [{
+            "width": "32"
+        }, {
+            "color": "green"
+        }, {
+            "width": "64",
+            "color": "steelblue"
+        }],
+        "people": [{
+            "width": "64"
+        }, {
+            "width": "16",
+            "color": "teal"
+        }, {
+            "width": "48",
+            "color": "yellowgreen"
+        }]
+    }
+
+}
