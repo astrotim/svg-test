@@ -16,15 +16,15 @@ module.exports = function(grunt) {
       default: {
         // Target-specific file lists and/or options go here.
         files: {
-          'icons/icon-sprite.svg': ['svg/*.svg']
+          'icons/icon-sprite.svg': ['icons/svg/*.svg']
         }
       },
     },
     svg_fallback: {
 
       your_target: {
-        src: 'svg',
-        dest: 'png/'
+        src: 'icons/svg',
+        dest: 'icons/png/'
       }
     },
     watch: {

@@ -3,38 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SVG Test</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
 
-	<style>
-		.icon {
-			color: tomato;
-			transition: all .5s;
-			width: 32px;
-			height: 32px;
-		}
+	<script src="js/modernizr.js"></script>
+	<script src="js/svg4everybody.js"></script>
+	<script>svg4everybody({nosvg: true});</script>
 
-		.icon:hover {
-			color: darkmagenta;
-			transform: scale(1.5);
-		}
-	</style>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
 </head>
 <body>
+
+	<div class="wrapper">
+
 	<h1>SVG Test</h1>
 
 	<p>House</p>
-	<svg class="icon">
+	<svg class="icon icon-house">
 		<use xlink:href="icons/icon-sprite.svg#icon-house"></use>
 	</svg>
 
+	<p>Wrapped in a Div</p>
+	<div class="icon icon-house">
+	<svg><use xlink:href="icons/icon-sprite.svg#icon-house"></use></svg>
+	</div>
+
 	<p>People</p>
-	<svg class="icon">
+	<svg class="icon icon-people">
 		<use xlink:href="icons/icon-sprite.svg#icon-people"></use>
 	</svg>
 
 	<p>Person</p>
-	<svg class="icon">
+	<svg class="icon icon-person">
 		<use xlink:href="icons/icon-sprite.svg#icon-person"></use>
 	</svg>
+
+	</div>
 
 
 </body>
